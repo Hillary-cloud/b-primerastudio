@@ -1,0 +1,1 @@
+<img src="{{asset("assets/img/B' Primera Studios LOGO2.jpg")}}" width="150px" alt="logo">
