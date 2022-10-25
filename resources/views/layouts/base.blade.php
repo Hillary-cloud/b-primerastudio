@@ -31,7 +31,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: black;">
+<body style="background-color: black; margin: 0; padding: 0;">
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
