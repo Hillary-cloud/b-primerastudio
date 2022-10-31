@@ -12,7 +12,7 @@ class HomeController extends Controller
 {
     public function index(){
         $photos = Gallery::where('status','1')->orderBy('created_at', 'DESC')->paginate(12);
-        $collages = Collage::where('status','1')->orderBy('created_at', 'DESC')->get();
+        $collages = Collage::where('status','1')->orderBy('created_at', 'DESC')->paginate(1);
         return view('index',compact('photos','collages'));
     }
 

@@ -100,7 +100,7 @@
                 @foreach ($photos as $photo)
                 <div class="card" >
                      <a href="{{route('view-photo-details',$photo->id)}}">
-                         <img src="{{asset('gallery_main_images/'.$photo->main_image)}}" alt="image"  />
+                         <img src="{{asset('/gallery_main_images/'.$photo->main_image)}}" alt="image"  />
                      </a>
                  </div>
                  @endforeach
