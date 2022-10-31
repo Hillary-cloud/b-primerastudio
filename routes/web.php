@@ -68,7 +68,8 @@ Route::middleware(['auth'])->group(function () {
 
 
 Route::get('/link', function(){
-    Artisan::call('storage::link');
+    symlink(storage_path('/app/public'), public_path('storage'));
+    echo "symlink created";
 });
 
 require __DIR__.'/auth.php';
