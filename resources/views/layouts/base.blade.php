@@ -25,7 +25,7 @@
     <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
     {{-- <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet"> --}}
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    {{-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> --}}
 
     <!-- Main Stylesheet File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -173,7 +173,7 @@
 
     <!-- Template Main Javascript File -->
     <script src="assets/js/main.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    {{-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> --}}
     
     <script>
         function scrollToTop(){
@@ -199,10 +199,10 @@ window.scrollTo(0,0);
        })
       
               </script>
-                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                {{-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 <script>
                     AOS.init();
-                  </script>
+                  </script> --}}
 
 </body>
 
