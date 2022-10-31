@@ -33,8 +33,8 @@ Route::get('/', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('/');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
-Route::get('/photo/{id}', [HomeController::class, 'viewPhotoDetails'])->name('view-photo-details');
 Route::get('/photos', [HomeController::class, 'allPhotos'])->name('all-photos');
+Route::get('/photo/{id}', [HomeController::class, 'viewPhotoDetails'])->name('view-photo-details');
 
 
 Route::middleware(['auth'])->group(function () {
