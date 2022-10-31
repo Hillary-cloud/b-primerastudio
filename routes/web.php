@@ -63,6 +63,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/collage/edit/{id}', [CollageController::class, 'editCollage'])->name('admin.edit-collage');
     Route::put('/admin/collage/edit/{id}', [CollageController::class, 'updateCollage'])->name('admin.update-collage');
     Route::delete('/admin/collage/delete/{id}', [CollageController::class, 'deleteCollage'])->name('admin.deleteCollage');
+
+});
+
+
+Route::get('/link', function(){
+    Artisan::call('storage::link');
 });
 
 require __DIR__.'/auth.php';
