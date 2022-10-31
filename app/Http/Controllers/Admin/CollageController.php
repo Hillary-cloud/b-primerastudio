@@ -21,7 +21,7 @@ class CollageController extends Controller
     public function storeCollage(Request $request)
     {
        $this->validate($request,[
-          'collage_image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
+          'collage_image' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
     ]); 
 //adding collage image
         if ($request->hasFile('collage_image')) {

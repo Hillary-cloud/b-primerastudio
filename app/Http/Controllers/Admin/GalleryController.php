@@ -35,7 +35,7 @@ class GalleryController extends Controller
     {
        $this->validate($request,[
           'category_id' => 'required',
-          'main_image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048|dimensions:min_width=100,min_height=100,max_width=1000,max_height=1000',
+          'main_image' => 'required|image|mimes:jpg,png,jpeg,gif,svg',
     ]); 
 //adding main image
         if ($request->hasFile('main_image')) {
